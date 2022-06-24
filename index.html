@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorum's Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;
+    0,600;0,700;1,200;1,300;1,400;1,800;1,900&display=swap" rel="stylesheet">
+   
+</head>
+    <body>
+        <div class="top-container" id="head">
+            <header class="header">
+                <div class="logo"><a href="index.html" class="logo">My Logo</a></div>
+                <nav class="menu-list">
+                    <ul onclick = "hideMenu()">
+                        <li><a href="#head" class="nav">Portfolio</a></li>
+                        <li><a href="#about" class="nav">About</a></li>
+                        <li><a href="#contact" class="nav">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="navigation"  onclick = "showMenu()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+             
+            </header>
+            <section class="bg">
+                <h1>I’m Jorum to see you!</h1>
+                <p>
+                    I’m a software developer! I can help you build a product , 
+                    feature or website Look through some of my work and experience! 
+                    If you like what you see and have a project you need coded, 
+                    don’t hestiate to contact me.</p>
+                <p class="connect">LET'S CONNECT</p>
+                <ul class="social-1">
+                    <li><a href="index.html"><img src="image/1.png" alt="Twitter"/></a></li>
+                    <li><a href="index.html"><img src="image/2.png" alt="Linkedin"/></a></li>
+                    <li><a href="index.html"><img src="image/3.png" alt="Medium"/></a></li>
+                    <li><a href="index.html"><img src="image/4.png" alt="Github"/></a></li>
+                    <li><a href="index.html"><img src="image/5.png" alt="Angellist"/></a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <div class="grid-item-photo" id="photo1" data-modal-target="#modal1">
+                </div>
+                <div class="grid-item-section">
+                    <h2 class="title">Tonic</h2>
+                    <ul class="sub-title">
+                        <li>CANOPY</li>
+                        <li>Back End Dev</li>
+                        <li>2015</li>
+                    </ul>
+                    <p>
+                        A daily selection of privately personalized reads; no account or sign-ups required.</p>
+                    <ul class="category">
+                        <li><a href="index.html">html</a></li>
+                        <li><a href="index.html">css</a></li>
+                        <li><a href="index.html">javaScript</a></li>
+                    </ul>
+                    <button type="button" class="project" data-modal-target="#modal1">See Project</button>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item-photo" id="photo2" data-modal-target="#modal0">
+                </div>
+                <section class="grid-item-section">
+                    <h2 class="title">Multi-Post Stories</h2>
+                    <ul class="sub-title">
+                        <li>CANOPY</li>
+                        <li>Back End Dev</li>
+                        <li>2015</li>
+                    </ul>
+                    <p>
+                        A daily selection of privately personalized reads; no account or sign-ups required.</p>
+                    <ul class="category">
+                        <li class="category-list"><a href="index.html">html</a></li>
+                        <li class="category-list"><a href="index.html">css</a></li>
+                        <li class="category-list"><a href="index.html">javaScript</a></li>
+                    </ul>
+                    <button type="button" class="project" data-modal-target="#modal0">See Project</button>
+                </section>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item-photo" id="photo3" data-modal-target="#modal1">
+                </div>
+                <section class="grid-item-section">
+                    <h2 class="title">Tonic</h2>
+                    <ul class="sub-title">
+                        <li>CANOPY</li>
+                        <li>Back End Dev</li>
+                        <li>2015</li>
+                    </ul>
+                    <p>
+                        A daily selection of privately personalized reads; no account or sign-ups required.</p>
+                    <ul class="category">
+                        <li class="category-list"><a href="index.html">html</a></li>
+                        <li class="category-list"><a href="index.html">css</a></li>
+                        <li class="category-list"><a href="index.html">javaScript</a></li>
+                    </ul>
+                    <button type="button" class="project" data-modal-target="#modal1">See Project</button>
+                </section>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item-photo" id="photo2" data-modal-target="#modal0">
+                </div>
+                <section class="grid-item-section">
+                    <h2 class="title">Multi-Post Stories</h2>
+                    <ul class="sub-title">
+                        <li>CANOPY</li>
+                        <li>Back End Dev</li>
+                        <li>2015</li>
+                    </ul>
+                    <p>
+                        A daily selection of privately personalized reads; no account or sign-ups required.</p>
+                    <ul class="category">
+                        <li class="category-list"><a href="index.html">html</a></li>
+                        <li class="category-list"><a href="index.html">css</a></li>
+                        <li class="category-list"><a href="index.html">javaScript</a></li>
+                    </ul>
+                    <button type="button" class="project" data-modal-target="#modal0">See Project</button>
+                </section>
+            </div>
+        </div>
+        
+        <div class="modal0" id="modal0">           
+        </div>
+        <div class="modal1" id="modal1">
+        </div>
+        <div class="modal2" id="modal2">
+        </div>
+        <div class="modal3" id="modal3">
+        </div>
+        <div id="overlay"></div>
+        
+        <section class="about" id="about">
+            <div class="about-content1">
+                <h2>About Myself</h2>
+                <p>
+                    Hello I’m a software developer! I can help you build a product , 
+                    feature or website Look through some of my work and experience! 
+                    If you like what you see and have a project you need coded, 
+                    don’t hestiate to contact me.</p>
+                <p class="connect">LET'S CONNECT</p>
+                <ul class="social-1">
+                    <li><a href="index.html"><img src="image/1.png" alt="Twitter"/></a></li>
+                    <li><a href="index.html"><img src="image/2.png" alt="Linkedin"/></a></li>
+                    <li><a href="index.html"><img src="image/3.png" alt="Medium"/></a></li>
+                    <li><a href="index.html"><img src="image/4.png" alt="Github"/></a></li>
+                    <li><a href="index.html"><img src="image/5.png" alt="Angellist"/></a></li>
+                </ul>
+                <button type="submit" class="project">Get my resume</button>
+            </div>
+            <div class="about-content2">
+                <ul class="skills">
+                    <li id="list"><a href="index.html">Languages</a></li>
+                    <div class="extra">
+                            <a href="index.html">
+                                <img src="image/Ellipse-1.png" alt="JavaScript" />
+                                <p class="list-4">JavaScript</p>
+                            </a>
+                            <a href="index.html">
+                                <img src="image/Ellipse-3.png" alt="HTML" />
+                                <p>HTML</p>
+                            </a>
+                            <a href="index.html">
+                                <img src="image/Ellipse-2.png" alt="Css" />
+                                <p>css</p>
+                            </a>
+                        </li>
+                    </div>
+                    <li id="list">Frameworks</li>
+                    <li id="list">Skills</li>
+                </ul>
+            </div>
+        </section>
+        <section class="contact-me" id="contact">
+            <h2>Contact me</h2>
+            <p>
+                If you have an application you are interested in developing, 
+                a feature that you need built or a project that needs coding. 
+                i'd love to help with it.</p>
+            <form action="https://formspree.io/f/xvolnqro" methop="post" class="text-me">
+                <input type="text" class="simple" placeholder="User name" maxlength="30" required>
+                <input type="email" class="simple" placeholder="Email" required>
+                <textarea class="text-area" placeholder="comment" required></textarea>
+                <button type="submit" class="project">Get in touch</button>
+            </form>       
+        </section>
+        <script  src="./js/menu.js" ></script>
+        <script  src="./js/jscontent.js" ></script>
+        <script  src="./js/modal.js" ></script>
+    </body>
+</html>
