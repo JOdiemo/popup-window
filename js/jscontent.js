@@ -1,4 +1,3 @@
-
 const allContent = [
   {
     name: 'Multi-Post Stories',
@@ -14,7 +13,7 @@ const allContent = [
   {
     name: 'Tonic',
     work: ['CANOPY', 'Back End Dev', '2015'],
-    content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
+    content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     languages: ['HTML', 'css', 'javaScript'],
   },
   {

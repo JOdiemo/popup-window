@@ -9,5 +9,4 @@ function showMenu() {
 function hideMenu() {
   document.querySelector('.navigation.active').classList.remove('active');
   document.querySelector('.menu-list.active').classList.remove('active');
-
 }
