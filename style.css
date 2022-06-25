@@ -904,7 +904,7 @@ li:hover {
 .modal2,
 .modal3 {
   position: fixed;
-  top:50%;
+  top: 50%;
   left: 50%;
   transition: 200ms ease-in-out;
   transform: translate(-50%, -50%) scale(0);
@@ -1065,8 +1065,8 @@ li:hover {
   }
 
   #photo111 {
-    background-image: url("image/Portfolio1.png"); 
-    content:  url("image/Portfolio1.png"); 
+    background-image: url("image/Portfolio1.png");
+    content: url("image/Portfolio1.png");
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -1103,6 +1103,7 @@ li:hover {
     margin-bottom: 2%;
     line-height: 24px;
   }
+
   .modal-photo .photo50 {
     display: flex;
     width: 70%;
@@ -1110,13 +1111,12 @@ li:hover {
     justify-content: center;
   }
 
-    .modal-photo .photo100 {
+  .modal-photo .photo100 {
     display: flex;
     width: 70%;
     height: 70%;
     justify-content: center;
   }
-
 
   .extra-buttons {
     display: flex;
@@ -1134,6 +1134,7 @@ li:hover {
     justify-content: center;
     text-align: center;
     white-space: nowrap;
+
     /* padding-bottom: 5px; */
   }
 
