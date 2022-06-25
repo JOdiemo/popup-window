@@ -1,4 +1,4 @@
-const emailForm = document.querySelector('#e-mail');
+const emailForm = document.querySelector('#email');
 const popupForm = document.querySelector('.formPopup');
 const submit = document.querySelector('#submit');
 
@@ -19,30 +19,27 @@ submit.addEventListener('click', (event) => {
 
 //Form input to localStorage
 
-const form = document.getElementById('#form');
-form.addEventListener('submit', () => {
-  
-  const formInput = {
-    name: document.getElementById('name').value,
-    email: document.getElementById('email').value,
-    textmessage: document.getElementById('message').value,
+// local storage path
+const nameForm = document.querySelector('#name');
+const emailForm1 = document.querySelector('#email');
+const messageForm = document.querySelector('#message');
+function handleChange() {
+  const formData = {
+    fullName: nameForm.value,
+    email: emailForm1.value,
+    message: messageForm.value,
   };
-  localStorage.setItem('formInput', JSON.stringify(formInput));
-});
-function inputDisplay() {
-  if (localStorage.getItem('formInput')) {
-    const {
-      name,
-      email,
-      textmessage,
-    } = JSON.parse(localStorage.getItem('formInput'));
-    const outputName = document.getElementById('name');
-    const outputEmail = document.getElementById('email');
-    const outPutTextmessage = document.getElementById('message');
-    outputName.value = name;
-    outputEmail.value = email;
-    outPutTextmessage.value = textmessage;
-  }
+  localStorage.setItem('form', JSON.stringify(formData));
 }
-
-inputDisplay();
+document.addEventListener('DOMContentLoaded', () => {
+  const getFormValue = localStorage.getItem('form');
+  if (getFormValue) {
+    const formObject = JSON.parse(getFormValue);
+    nameForm.value = formObject.fullName;
+    emailForm1.value = formObject.email;
+    messageForm.value = formObject.message;
+  }
+});
+nameForm.onchange = handleChange;
+emailForm.onchange = handleChange;
+messageForm.onchange = handleChange;
