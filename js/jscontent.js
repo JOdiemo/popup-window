@@ -9,6 +9,8 @@ const allContent = [
      of type and scrambled it to make a type specimen book. 
      `,
     languages: ['HTML', 'css', 'javaScript'],
+    sourceImage: "https://github.com/JOdiemo",
+    liveImage: "https://github.com/JOdiemo",
     photoid: "100",
     ref: "0"
   },
@@ -17,6 +19,8 @@ const allContent = [
     work: ['CANOPY', 'Back End Dev', '2015'],
     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     languages: ['HTML', 'css', 'javaScript'],
+    sourceImage: "https://github.com/JOdiemo",
+    liveImage: "https://github.com/JOdiemo",
     photoid: "50",
     ref: "1"
   },
@@ -29,6 +33,8 @@ const allContent = [
      of type and scrambled it to make a type specimen book. 
     `,
     languages: ['HTML', 'css', 'javaScript'],
+    sourceImage: "https://github.com/JOdiemo",
+    liveImage: "https://github.com/JOdiemo",
     photoid: "50",
     ref: "2"
   },
@@ -41,6 +47,8 @@ const allContent = [
      of type and scrambled it to make a type specimen book. 
      `,
     languages: ['HTML', 'css', 'javaScript'],
+    sourceImage: "https://github.com/JOdiemo",
+    liveImage: "https://github.com/JOdiemo",
     photoid: "100",
     ref: "3"
   },
@@ -82,8 +90,8 @@ for (let i =0 ; i <= allContent.length; i++){
                       <li><a href='index.html'>${allContent[i].languages[2]}</a></li>
                   </ul>
                   <div class='extra-buttons'>  
-                  <a class=modBtns" href='https://github.com/JOdiemo' target="_blank"><button class='modal'><p>See Live</p><img src='image/sm1.png'></button></a>
-                  <a class=modBtns" href='https://github.com/JOdiemo' target="_blank"><button class='modal'><p>See Source</p><img src='image/sm2.png'></button></a>
+                  <a class=modBtns" href='${allContent[i].sourceImage}' target="_blank"><button class='modal'><p>See Live</p><img src='image/sm1.png'></button></a>
+                  <a class=modBtns" href='${allContent[i].liveImage}' target="_blank"><button class='modal'><p>See Source</p><img src='image/sm2.png'></button></a>
                   </div>
               </div>
           </section> 
